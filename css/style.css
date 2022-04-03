@@ -32,6 +32,45 @@ input, button, textarea, select {
 	font: inherit;
 }
 
+a {
+	text-decoration: none;
+}
+
+/* font-family: 'Merriweather', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif; */
+
 body {
 	min-height: 100vh;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+	max-width: 1190px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+.header__top-inner {
+	padding-bottom: 29px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.menu__list {
+	display: flex;
+}
+
+.menu__list-item+.menu__list-item {
+	margin-left: 32px;
+}
+
+.menu__list-link {
+	padding: 0 9px 9px;
+	font-size: 12px;
+	line-height: 14px;
+	text-transform: uppercase;
+	color: #373A39;
+	font-weight: bold;
 }
