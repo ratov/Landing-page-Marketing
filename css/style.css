@@ -86,6 +86,10 @@ body {
 	align-items: flex-end;
 }
 
+.menu__btn {
+	display: none;
+}
+
 .menu__list {
 	display: flex;
 }
@@ -477,7 +481,7 @@ body {
 	display: flex;
 }
 
-.slick-dots li + li {
+.slick-dots li+li {
 	margin-left: 13px;
 }
 
@@ -571,7 +575,7 @@ body {
 
 .pricing__items {
 	display: flex;
-	justify-content: space-between;	
+	justify-content: space-between;
 }
 
 ul.pricing__item {
@@ -639,7 +643,7 @@ ul.pricing__item {
 .connection {
 	padding: 145px 0 160px;
 	background-image: url('../images/map.jpg');
-	background-repeat: no-repeat ;
+	background-repeat: no-repeat;
 	background-size: 40%;
 	background-position: right 65%;
 }
@@ -667,7 +671,7 @@ ul.pricing__item {
 .form input::placeholder,
 .form textarea::placeholder {
 	font-size: 12px;
-	line-height: 20px;	
+	line-height: 20px;
 	letter-spacing: 3.7091px;
 	color: #b8b8b8;
 	text-transform: uppercase;
@@ -755,4 +759,93 @@ ul.footer__social {
 	line-height: 16px;
 	color: #ccc;
 	background-color: #2A2C2B;
+}
+
+
+
+
+
+@media(max-width: 768px) {
+	.menu__list {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		background-color: #000;
+		display: block;
+		text-align: center;
+		transform: translateY(-200%);
+		transition: all .5s;
+	}
+
+	ul.menu__list {
+		padding: 90px 0 15px;
+	}
+
+	.menu__list-item + .menu__list-item {
+		margin-left: 0;
+	}
+
+	.menu__list-link {
+		display: block;
+		padding: 15px 0;
+		color: #fff;
+	}
+
+	.logo {
+		position: relative;
+		z-index: 2;
+	}
+
+	.header__top-inner.header__top-inner--active .menu__list {
+		transform: translateY(0);
+	}
+
+	.header__top-inner path,
+	.header__top-inner rect {
+		transition: all .5s;
+	}
+
+	.header__top-inner.header__top-inner--active path,
+	.header__top-inner.header__top-inner--active .menu__btn rect {
+		fill: #fff;
+	}
+
+	.menu__btn {
+		display: block;
+		background-color: transparent;
+		border: none;
+		padding: 0;
+		cursor: pointer;
+		margin-top: 30px;
+		position: relative;
+		z-index: 2;
+	}
+
+	.header__top-inner {
+		align-items: center;
+	}
+
+	.header__title {
+		font-size: 50px;
+		line-height: 65px;
+		margin-bottom: 10px;
+	}
+
+	.header__subtitle {
+		font-size: 14px;
+		line-height: 16px;
+	}
+}
+
+@media(max-width: 440px) {
+	.header__title {
+		font-size: 36px;
+		line-height: 44px;
+	}
+
+	.header__subtitle {
+		font-size: 12px;
+		line-height: 14px;
+	}
 }

@@ -1,9 +1,4 @@
 $(function () {
-	var mixer = mixitup('.portfolio__content', {
-		animation: {
-			// duration: 2000
-	}
-	});
 
 	$('.slider-blog__inner').slick({
 		dots: true,
@@ -14,4 +9,15 @@ $(function () {
 			<img src="images/arrow-right.svg" alt="">
 		</button>`
 	});
+
+	$('.menu__btn').on('click', function() {
+		$('.header__top-inner').toggleClass('header__top-inner--active');
+	});
+
+	var mixer = mixitup('.portfolio__content', {
+		animation: {
+			// duration: 2000
+	}
+	});
+
 });
