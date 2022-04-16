@@ -7,17 +7,25 @@ $(function () {
 		</button>`,
 		nextArrow: `<button type="button" class="slick-next">
 			<img src="images/arrow-right.svg" alt="">
-		</button>`
+		</button>`,
+		responsive: [
+			{
+				breakpoint: 769,
+				settings: {
+					arrows: false
+				}
+			}
+		]
 	});
 
-	$('.menu__btn').on('click', function() {
+	$('.menu__btn').on('click', function () {
 		$('.header__top-inner').toggleClass('header__top-inner--active');
 	});
 
 	var mixer = mixitup('.portfolio__content', {
 		animation: {
 			// duration: 2000
-	}
+		}
 	});
 
 });
