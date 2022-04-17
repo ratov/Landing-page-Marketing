@@ -80,6 +80,16 @@ body {
 	left: 0;
 }
 
+.header__top {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 999;
+	background-color: #fff;
+}
+
 .header__top-inner {
 	padding-bottom: 29px;
 	display: flex;
@@ -117,6 +127,7 @@ body {
 }
 
 .header__content {
+	margin-top: 100px;
 	max-width: 100%;
 	background-image: url("../images/header-bg.jpg");
 	background-repeat: no-repeat;
